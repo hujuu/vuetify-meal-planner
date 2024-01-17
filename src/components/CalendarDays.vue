@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
+import CalendarCard from "@/components/CalendarCard.vue";
 
 interface Today {
   id: number;
@@ -62,7 +63,7 @@ const cards = ref<Card[]>(generateCards(props.date, props.days));
     <tbody>
     <tr v-for="card in cards" :key="card.date.toString()">
       <td class="py-4">
-        {{ card.content }}
+        <calendar-card :card="card" />
       </td>
     </tr>
     </tbody>
