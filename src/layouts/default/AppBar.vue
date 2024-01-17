@@ -4,9 +4,8 @@
     <v-menu activator="#hamburger-activator">
       <v-list>
         <v-list-item>
-          <v-btn flat block><router-link to="/">Home</router-link></v-btn>
-          <v-btn flat block
-          ><router-link to="/recipes">Recipes</router-link></v-btn
+          <v-btn flat block><app-link to="/">Home</app-link></v-btn>
+          <v-btn flat block><app-link to="/recipes">Recipes</app-link></v-btn
           >
         </v-list-item>
       </v-list>
@@ -21,5 +20,5 @@
 </template>
 
 <script lang="ts" setup>
-  //
+import AppLink from '@/components/AppLink.vue';
 </script>
