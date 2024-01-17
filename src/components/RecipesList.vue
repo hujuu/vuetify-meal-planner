@@ -5,7 +5,7 @@ import { storeToRefs } from "pinia";
 import type { Recipe } from "@/types/spoonacular";
 
 
-import { usePlannerStore } from "@/stores/planner";
+import { usePlannerStore } from "@/store/planner";
 const store = usePlannerStore();
 
 import RecipeTable from "./RecipeTable.vue";
